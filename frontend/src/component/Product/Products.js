@@ -39,7 +39,7 @@ const Products = ({ match }) => {
     resultPerPage,
     filteredProductsCount,
   } = useSelector((state) => state.products);
-
+   console.log(products);
   const keyword = match.params.keyword;
 
   const setCurrentPageNo = (e) => {
@@ -99,7 +99,7 @@ const Products = ({ match }) => {
                 </li>
               ))}
             </ul>
-
+            
             <fieldset>
               <Typography component="legend">Ratings Above</Typography>
               <Slider
@@ -132,6 +132,8 @@ const Products = ({ match }) => {
               />
             </div>
           )}
+
+           
         </Fragment>
       )}
     </Fragment>
